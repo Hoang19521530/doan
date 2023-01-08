@@ -46,7 +46,7 @@ const Summary = ({ summary }) => {
       <form className="w-4/5 md:w-2/5 my-2">
         <div className="mb-3">
           <label className="form-label inline-block mb-2 font-bold text-sm text-gray-700">
-            Destination
+            Địa chỉ
           </label>
 
           <input
@@ -55,7 +55,7 @@ const Summary = ({ summary }) => {
             text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
             rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white
             focus:border-blue-600 focus:outline-none"
-            placeholder="Your full address"
+            placeholder=""
             name="destination"
             onChange={(e) => setDestination(e.target.value)}
             value={destination}
@@ -64,7 +64,7 @@ const Summary = ({ summary }) => {
 
         <div className="mb-3">
           <label className="form-label inline-block mb-2 font-bold text-sm text-gray-700">
-            Phone
+            Số điện thoại
           </label>
 
           <input
@@ -73,7 +73,7 @@ const Summary = ({ summary }) => {
             text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
             rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white
             focus:border-blue-600 focus:outline-none"
-            placeholder="Phone"
+            placeholder=""
             name="phone"
             onChange={(e) => setPhone(e.target.value)}
             value={phone}
@@ -87,7 +87,7 @@ const Summary = ({ summary }) => {
             focus:border-blue-900 focus:shadow-lg focus:outline-none focus:ring-0 active:border-blue-900 
             active:shadow-lg transition duration-150 ease-in-out hover:text-white w-full"
           >
-            Back to Shopping
+            Tiếp tục mua hàng
           </button>
         </div>
       </form>
@@ -95,12 +95,12 @@ const Summary = ({ summary }) => {
       <div className="w-4/5 md:w-2/5 my-2">
         <div className="mb-3">
           <h4 className="mb-2 font-bold text-sm text-gray-700">
-            Order Summary
+            Đon hàng
           </h4>
         </div>
 
         <div className="flex justify-between items-center mb-3">
-          <h4 className="mb-2 text-sm text-gray-700">Subtotal</h4>
+          <h4 className="mb-2 text-sm text-gray-700"></h4>
 
           <small className="flex justify-start items-center space-x-1">
             <FaEthereum />
@@ -111,7 +111,7 @@ const Summary = ({ summary }) => {
         </div>
 
         <div className="flex justify-between items-center mb-3">
-          <h4 className="mb-2 text-sm text-gray-700">Tax</h4>
+          <h4 className="mb-2 text-sm text-gray-700">Thuế</h4>
 
           <small className="flex justify-start items-center space-x-1">
             <FaEthereum />
@@ -120,7 +120,7 @@ const Summary = ({ summary }) => {
         </div>
 
         <div className="flex justify-between items-center mb-3">
-          <h4 className="mb-2 text-sm text-gray-700 font-bold">Grand Total</h4>
+          <h4 className="mb-2 text-sm text-gray-700 font-bold">Tổng đơn hàng</h4>
 
           <small className="flex justify-start items-center space-x-1">
             <FaEthereum />
@@ -138,7 +138,7 @@ const Summary = ({ summary }) => {
           active:shadow-lg transition duration-150 ease-in-out w-full"
             onClick={handleCheckout}
           >
-            Place Order Now
+            Đặt hàng
           </button>
         </div>
       </div>

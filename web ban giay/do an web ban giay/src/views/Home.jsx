@@ -20,7 +20,7 @@ const Home = () => {
       <Banner />
       <ShopStats stats={stats} />
       <div className="h-20"></div>
-      <Cards products={products} title="Global Shop" />
+      <Cards products={products} title="Bán chạy trong tuần" />
     </>
   ) : null
 }

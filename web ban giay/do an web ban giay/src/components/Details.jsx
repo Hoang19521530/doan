@@ -71,9 +71,9 @@ const Details = ({ product }) => {
               </small>
             </Link>
 
-            <span className="text-sm text-gray-500">
+            {/* <span className="text-sm text-gray-500">
               {product.stock} in stock
-            </span>
+            </span> */}
           </div>
         </div>
 
@@ -108,12 +108,9 @@ const Details = ({ product }) => {
               active:shadow-lg transition duration-150 ease-in-out flex justify-start items-center space-x-2"
               onClick={() => addToCart(product)}
             >
-              <span>Add to Cart</span>
+              <span>Thêm vào giỏ hàng</span>
 
-              <div className="flex justify-start items-center">
-                <FaEthereum size={15} />
-                <span className="font-semibold">{product.price}</span>
-              </div>
+             
             </button>
           )}
           <button
@@ -123,7 +120,7 @@ const Details = ({ product }) => {
             active:shadow-lg transition duration-150 ease-in-out hover:text-white"
             onClick={handleChat}
           >
-            Chat with Seller
+            Chat vói admin
           </button>
         </div>
       </div>

@@ -33,46 +33,46 @@ const Cart = ({ cart, summary }) => {
   return (
     <>
       <div className="flex flex-col justify-between items-center space-x-2 md:w-2/3 w-full p-5 mx-auto">
-        <h4 className="text-center uppercase mb-8">Shopping Cart</h4>
+        <h4 className="text-center uppercase mb-8">Giỏ hàng</h4>
 
         <table className="min-w-full hidden md:table">
           <thead className="border-b">
             <tr>
               <th
                 scope="col"
-                className="text-sm font-medium px-6 py-4 text-left"
+                className="text-sm font-medium px-1 py-4 text-left"
               >
-                S/N
+                Số thứ tự
+              </th>
+              <th
+                scope="col"
+                className="text-sm font-medium px-7 py-4 text-left"
+              >
+                Sản phẩm
+              </th>
+              <th
+                scope="col"
+                className="text-sm font-medium px-12 py-4 text-left"
+              >
+                Số lượng
+              </th>
+              <th
+                scope="col"
+                className="text-sm font-medium px-10 py-4 text-left"
+              >
+                Giá
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium px-6 py-4 text-left"
               >
-                Product
+                
               </th>
               <th
                 scope="col"
-                className="text-sm font-medium px-6 py-4 text-left"
+                className="text-sm font-medium px-10 py-4 text-left"
               >
-                Qty
-              </th>
-              <th
-                scope="col"
-                className="text-sm font-medium px-6 py-4 text-left"
-              >
-                Price
-              </th>
-              <th
-                scope="col"
-                className="text-sm font-medium px-6 py-4 text-left"
-              >
-                Action
-              </th>
-              <th
-                scope="col"
-                className="text-sm font-medium px-6 py-4 text-left"
-              >
-                Total
+                Tổng
               </th>
             </tr>
           </thead>
@@ -146,7 +146,7 @@ const Cart = ({ cart, summary }) => {
                 active:bg-gray-200 transition duration-150 ease-in-out"
                     onClick={() => remFromCart(product)}
                   >
-                    Remove
+                    Xóa
                   </button>
                 </td>
                 <td className="text-sm font-light px-6 py-4 whitespace-nowrap">
@@ -233,7 +233,7 @@ const Cart = ({ cart, summary }) => {
                 active:bg-gray-200 transition duration-150 ease-in-out"
                   onClick={() => remFromCart(product)}
                 >
-                  Remove
+                  Xóa
                 </button>
               </div>
             </div>

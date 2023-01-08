@@ -17,7 +17,7 @@ const Header = () => {
         className="flex justify-start items-center space-x-1 text-md font-bold"
       >
         <FaEthereum className="cursor-pointer" size={25} />
-        <span>Giaygiare</span>
+        <span>Game shop</span>
       </Link>
 
       <div className="flex justify-end items-center space-x-6">
@@ -65,7 +65,7 @@ const Header = () => {
             active:shadow-lg transition duration-150 ease-in-out"
             onClick={connectWallet}
           >
-            Connect
+            Kết nối với ví
           </button>
         )}
       </div>
