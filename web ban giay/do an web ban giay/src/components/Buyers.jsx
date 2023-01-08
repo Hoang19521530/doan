@@ -14,25 +14,25 @@ const Buyers = ({ buyers }) => {
                   scope="col"
                   className="text-sm font-medium px-6 py-4 text-left"
                 >
-                  Buyer
+                  Người mua
                 </th>
                 <th
                   scope="col"
                   className="text-sm font-medium px-6 py-4 text-left"
                 >
-                  Cost
+                  Giá
                 </th>
                 <th
                   scope="col"
                   className="text-sm font-medium px-6 py-4 text-left"
                 >
-                  Qty
+                  Số lượng
                 </th>
                 <th
                   scope="col"
                   className="text-sm font-medium px-6 py-4 text-left"
                 >
-                  Date
+                  Ngày 
                 </th>
               </tr>
             </thead>
